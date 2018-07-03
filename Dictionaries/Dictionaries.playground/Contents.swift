@@ -15,6 +15,12 @@ if airports.isEmpty {
     print("The airports dictionary is empty")
 }
 
+airports["LHR"] = "London"
+airports["LHR"] = "London Heathrow"
+airports["DEV"] = "Developers International"
+
+airports["DEV"] = nil
+
 for (airportCode, airportName) in airports {
     print("\(airportCode): \(airportName)")
 }
