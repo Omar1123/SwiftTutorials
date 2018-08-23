@@ -10,10 +10,12 @@ if lotteryWinnings != nil {
     print(lotteryWinnings!)
 }
 
-lotteryWinnings = 100
+lotteryWinnings = nil
 
 if let winnings = lotteryWinnings {
     print(winnings)
+} else {
+    print("The value is nil")
 }
 
 class Car {
@@ -80,6 +82,14 @@ class Dog {
 
 var lab = Dog(someSpecies: "Black Lab")
 print(lab.species)
+
+// Implicitly Unwrapped Optinals
+let assumendValue: Int! = 5
+let implicitlValue: Int = assumendValue
+
+// Nil Coalescing & Using Ternary Operator
+let optinalInt: Int? = nil
+let result = optinalInt ?? 0
 
 
 
